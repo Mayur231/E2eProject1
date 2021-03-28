@@ -9,22 +9,20 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
-/*import pageObjects.Landingpage;
-import pageObjects.Loginpage;
-import pageObjects.PortalHomepage;*/
+
 
 
 class stepDefination extends Base {
 
     @Given("^Initialize the browser with chrome$")
     public void initialize_the_browser_with_chrome() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
+
         driver =initializeDriver();
     }
 
     @Given("^Navigate to \"([^\"]*)\" Site$")
     public void navigate_to_Site(String arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
+
         driver.get(arg1);
     }
 
@@ -43,7 +41,7 @@ class stepDefination extends Base {
 
     @Then("^Verify that user is succesfully logged in$")
     public void verify_that_user_is_succesfully_logged_in() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
+
         PortalHomepage p=new PortalHomepage(driver);
         Assert.assertTrue(p.getSearchBox().isDisplayed());
     }
