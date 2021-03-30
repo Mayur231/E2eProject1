@@ -32,7 +32,7 @@ public class Homepage extends Base {
         driver.get(prop.getProperty("url"));
         Landingpage lp=new Landingpage(driver);
         Loginpage lp1=lp.getlogin();
-        //Loginpage lp1=new Loginpage(driver);
+       // Loginpage lp1=new Loginpage(driver);
         lp1.getEmail().sendKeys(Username);
         lp1.getpwd().sendKeys(Password);
         log.info(text);

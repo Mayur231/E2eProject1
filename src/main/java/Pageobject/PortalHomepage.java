@@ -13,11 +13,9 @@ public class PortalHomepage {
 
     public PortalHomepage(WebDriver driver) {
 
-
         this.driver = driver;
 
     }
-
 
 
     public WebElement getSearchBox()
